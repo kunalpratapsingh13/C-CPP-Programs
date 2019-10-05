@@ -3,15 +3,12 @@
 int main()
 {
 	char str[50];
-	int count=0,len;
+	int len;
 	//clrscr();
 	printf("\nENTER A STRING: ");
 	gets(str);
 	for(len=0;str[len]!=NULL;len++);
-	{
-		count=count+len;
-	}
-	printf("\nTHE LENGTH OF THE STRING IS %d",count);
+	printf("\nTHE LENGTH OF THE STRING IS %d",len);
 	getch();
 }
 
