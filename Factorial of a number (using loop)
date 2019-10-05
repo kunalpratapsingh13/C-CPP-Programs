@@ -4,15 +4,13 @@
 int main()
 {
 	int i,num;
-	int fact,temp;
+	int fact=1;
 	printf("\nENTER THE NUMBER:");
 	scanf("%d",&num);
-	temp=num;
-	for (i=1;i<num;i++)
+	for (i=1;i<=num;i++)
 	{
-		fact=num*i;
-		num=fact;
+		fact=fact*i;
 	}
-	printf("\nFACTORIAL OF %d IS:%d",temp,fact);
+	printf("\nFACTORIAL OF %d IS:%d",num,fact);
 	getch();
 }
